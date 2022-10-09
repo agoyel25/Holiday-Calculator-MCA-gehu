@@ -1,0 +1,94 @@
+body {
+  background: rgb(51, 16, 31);
+  background: radial-gradient(
+    circle,
+    rgba(51, 16, 31, 1) 0%,
+    rgba(18, 23, 28, 1) 100%
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.head {
+  font-size: 60px;
+  margin: 0px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: rgb(234, 221, 227);
+  background: radial-gradient(
+    circle,
+    rgba(234, 221, 227, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  font-size: 40px;
+  margin-top: 60px;
+  text-align: center;
+  color: rgb(234, 221, 227);
+}
+.input {
+  text-align: center;
+}
+.in {
+  padding: 10px;
+  font-size: 18px;
+  border-width: 3px;
+  border-color: #5f0e0e;
+  background-color: rgb(234, 221, 227);
+  color: black;
+  border-style: inset;
+  border-radius: 19px;
+}
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #050305;
+  font-size: 19px;
+  background: rgb(234, 221, 227);
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgb(234, 221, 227); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-decoration: none;
+}
+
+.msg {
+  font-size: 40px;
+  margin-top: 60px;
+  text-align: center;
+  color: linear-gradient(
+    to right,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  );
+  font-family: "Roboto", sans-serif;
+}
+
+.theimage {
+  visibility: hidden;
+}
