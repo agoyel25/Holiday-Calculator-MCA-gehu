@@ -6,5 +6,5 @@ this project is in alpha stage! the calculations performed to find holidays is s
 - Enter 2
 - ✨Magic ✨
 ## License
-MIT
+GPL
 **Free Software, Hell Yeah!**
