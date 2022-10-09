@@ -41,7 +41,7 @@ document.querySelector(".check").addEventListener("click", function () {
     let bunksLeft = clsAttendedFreq - MinClass;
     document.querySelector(
       ".msg"
-    ).textContent = `u can miss college for  ${bunksLeft} days! Enjoy🎃`;
+    ).textContent = `u can take ${bunksLeft} holidays! Enjoy🎃`;
     document.querySelector("body").style.background = "#1bbf28";
   } else {
     document.querySelector(".msg").textContent = `Enter something🍵`;
