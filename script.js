@@ -23,13 +23,14 @@ document.querySelector(".check").addEventListener("click", function () {
   let Freq = document.querySelector(".freq").value;
   Freq = Number(Freq);
   const totalWeek = 10;
-  const clsAttendedFreq = (Freq * totalWeek) + 6;
+  const clsAttendedFreq = Freq * totalWeek + 6;
   const MinClass = 45;
   const mustAttend = MinClass - clsAttendedFreq;
   console.log(typeof Freq);
-  if (Freq > 6) {
+  console.log(Freq);
+  if (Freq > 6 || Freq === 0) {
     document.querySelector(".msg").textContent = `Invalid Value🔴`;
-    document.querySelector("body").style.background = "#ffffff";
+    document.querySelector("body").style.background = "#000000";
   } else if (clsAttendedFreq < MinClass) {
     document.querySelector(
       ".msg"
@@ -41,9 +42,9 @@ document.querySelector(".check").addEventListener("click", function () {
     let bunksLeft = clsAttendedFreq - MinClass;
     document.querySelector(
       ".msg"
-    ).textContent = `u can bunk ${bunksLeft} classes! Enjoy🎃`;
+    ).textContent = `u can miss college for  ${bunksLeft} days! Enjoy🎃`;
     document.querySelector("body").style.background = "#1bbf28";
-  } else {
+  } else if (Freq == null || Freq < 1) {
     document.querySelector(".msg").textContent = `Enter something🍵`;
   }
 });
