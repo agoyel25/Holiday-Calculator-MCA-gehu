@@ -23,7 +23,7 @@ document.querySelector(".check").addEventListener("click", function () {
   let Freq = document.querySelector(".freq").value;
   Freq = Number(Freq);
   const totalWeek = 10;
-  const clsAttendedFreq = Freq * totalWeek;
+  const clsAttendedFreq = (Freq * totalWeek) + 6;
   const MinClass = 45;
   const mustAttend = MinClass - clsAttendedFreq;
   console.log(typeof Freq);
